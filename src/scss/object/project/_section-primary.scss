@@ -1,0 +1,11 @@
+.p-section-primary {
+  &__item {
+    margin-top: get_vw(80, 375);
+    @include mq_medium {
+      margin-top: get_vw(160, 1440);
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

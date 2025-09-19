@@ -1,0 +1,44 @@
+.l-nav {
+  position: fixed;
+  z-index: 11;
+  color: var(--white);
+  padding: var(--margin-side);
+  width: 100%;
+  transition: 0.3s;
+  &--slide {
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    background-color: var(--gray-dark);
+  }
+  &--fade {
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    height: 100dvh;
+    background-color: var(--gray);
+  }
+  &__wrap {
+    @include mq_medium_max {
+      max-height: 100%;
+      overflow: auto;
+    }
+  }
+  &__inner {
+  }
+  &__logo {
+  }
+  &__nav {
+  }
+}
+.is-navopen {
+  .l-nav {
+    &--slide {
+      transform: translateX(0);
+    }
+    &--fade {
+      animation: fadein 0.2s linear 0s forwards;
+    }
+  }
+}

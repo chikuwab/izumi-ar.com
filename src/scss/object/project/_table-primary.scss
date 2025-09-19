@@ -1,0 +1,36 @@
+.p-table-primary {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 24px;
+  &--black {
+    border-color: #000;
+    .p-table-primary {
+      &__item {
+        &:not(:first-child) {
+          border-color: #000;
+        }
+      }
+    }
+  }
+  &__item {
+    @include mq_medium {
+      display: flex;
+    }
+    &:not(:first-child) {
+      margin-top: 24px;
+      border-top: 1px solid #fff;
+      padding-top: 24px;
+    }
+  }
+  &__title {
+    @include mq_medium {
+      flex-basis: 120px;
+    }
+  }
+  &__data {
+    margin-top: 8px;
+    @include mq_medium {
+      margin-top: 0;
+      flex-basis: auto;
+    }
+  }
+}

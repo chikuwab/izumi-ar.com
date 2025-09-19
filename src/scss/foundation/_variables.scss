@@ -1,0 +1,98 @@
+$design-base-width-pc: 1440;
+$design-base-width-sp: 375;
+
+$breakpoint-small: 375px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1400px;
+$breakpoint-xl: 0px;
+
+$breakpoint-small-number: 375;
+$breakpoint-medium-number: 800;
+$breakpoint-large-number: 1400;
+$breakpoint-xl-number: 0;
+
+$width-contents: 800px;
+$width-contents-narrow: 0px;
+$width-contents-wide: 0px;
+$width-contents-narrow-sp: 0;
+$width-contents-wide-sp: 0;
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --orange: #;
+  --blue: #;
+  --yellow: #ffff00;
+  --navy: #;
+  --red: #9b000d;
+  --green: #;
+  --pink: #dd077d;
+  --gray: #;
+  --gray-dark: #;
+  --gray-light: #;
+
+  --breakpoint-small: #{$breakpoint-small};
+  --breakpoint-medium: #{$breakpoint-medium};
+  --breakpoint-large: #{$breakpoint-large};
+  --breakpoint-xl: #{$breakpoint-xl};
+
+  --width-contents: #{$width-contents};
+  --width-contents-narrow: #{$width-contents-narrow};
+  --width-contents-wide: #{$width-contents-wide};
+  --width-contents-narrow-sp: #{$width-contents-narrow-sp};
+  --width-contents-wide-sp: #{$width-contents-wide-sp};
+
+  --height-header: 70px;
+
+  --font-family-en: "Roboto Condensed", sans-serif;
+  --font-family-serif: "", serif;
+  --font-family-sans-serif: "", sans-serif;
+  --font-size-xs: 1.2rem;
+  --font-size-small: 1.4rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-xl: 2rem;
+
+  --line-height-small: 1.5;
+  --line-height-medium: 1.7;
+  --line-height-large: 2;
+  --line-height-xl: 2.3;
+
+  --margin-side: min(20px, 5.3vw);
+
+  --margin-section-small: min(100px, 24.15vw);
+  --margin-section-medium: min(140px, 33.81vw);
+  --margin-section-large: min(180px, 43.47vw);
+
+  --margin-xs: min(24px, 5.79vw);
+  --margin-small: min(32px, 7.72vw);
+  --margin-medium: min(40px, 9.66vw);
+  --margin-large: min(48px, 11.59vw);
+  --margin-xl: min(56px, 13.52vw);
+
+  --border-radius-xs: min(16px, 3.86vw);
+  --border-radius-small: min(24px, 5.79vw);
+  --border-radius-medium: min(32px, 7.72vw);
+  --border-radius-large: min(40px, 7.66vw);
+
+  @include mq_medium {
+    --height-header: 100px;
+
+    --margin-side: min(50px, 4.16vw);
+
+    // --margin-section-small: min(40px, 3.3vw);
+    // --margin-section-medium: min(80px, 6.7vw);
+    // --margin-section-large: min(120px, 10vw);
+
+    // --margin-editor-small: min(30px, 2.5vw);
+    // --margin-editor-medium: min(50px, 4.2vw);
+
+    // --padding-box-small: 0;
+    // --padding-box-medium: min(30px, 2.5vw);
+    // --padding-box-large: 0;
+
+    // --border-radius-small: 0px;
+    // --border-radius-medium: 0px;
+    // --border-radius-large: 0px;
+  }
+}

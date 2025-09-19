@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+@mixin bg_item_top($num) {
+  top: calc(($num / 1404) * 100%);
+}

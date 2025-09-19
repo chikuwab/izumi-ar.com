@@ -1,0 +1,93 @@
+@mixin editor {
+  > div {
+    margin-top: var(--margin-small);
+  }
+  ul,
+  ol,
+  figure,
+  picture,
+  p {
+    &:not(:first-child) {
+      margin-top: var(--margin-small);
+    }
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    &:not(:first-child) {
+      margin-top: var(--margin-medium);
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  // h2,
+  // h3,
+  // h4,
+  // h5 {
+  // 	&:not(:first-child) {
+  // 		margin-top: var(--margin-medium);
+  // 	}
+  // }
+  picture {
+    display: block;
+  }
+  ul {
+    li {
+      margin-top: 0.3em;
+      padding-left: 15px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.9em;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background-color: var(--black);
+        border-radius: 50%;
+      }
+    }
+    &:first-child {
+      li:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  ol {
+    counter-reset: number 0;
+    li {
+      margin-top: 0.3em;
+      padding-left: 20px;
+      position: relative;
+      &::after {
+        counter-increment: number 1;
+        content: counter(number) " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: var(--black);
+        font-weight: bold;
+      }
+      &::before {
+        content: ".";
+        position: absolute;
+        top: 0;
+        left: 0.58em;
+        color: var(--black);
+        font-weight: bold;
+      }
+    }
+    &:first-child {
+      li:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

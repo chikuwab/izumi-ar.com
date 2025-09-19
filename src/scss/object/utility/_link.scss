@@ -1,0 +1,9 @@
+.u-link {
+	&-inherit {
+		color: inherit;
+		text-decoration: inherit;
+	}
+	&-inlinesvg {
+		cursor: pointer;
+	}
+}

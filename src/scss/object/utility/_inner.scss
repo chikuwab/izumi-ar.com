@@ -1,0 +1,14 @@
+.u-inner {
+  padding-left: get_vw(24.96, 375);
+  padding-right: get_vw(24.96, 375);
+  @include mq_medium {
+    padding-left: get_vw(80, 1440);
+    padding-right: get_vw(80, 1440);
+  }
+  &-sp {
+    @include mq_medium_max {
+      padding-left: get_vw(24.96, 375);
+      padding-right: get_vw(24.96, 375);
+    }
+  }
+}
