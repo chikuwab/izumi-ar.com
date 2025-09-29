@@ -1,0 +1,19 @@
+.p-block-list {
+  &__item {
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+    &:not(:first-child) {
+      margin-top: var(--margin-small);
+    }
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  &__date {
+    color: var(--gray);
+  }
+  &__title {
+    margin-top: 4px;
+  }
+}

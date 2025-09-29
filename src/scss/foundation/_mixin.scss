@@ -40,33 +40,6 @@
   overflow: hidden;
 }
 
-@mixin max-screen($break-point) {
-  @media screen and (max-width: $break-point) {
-    @content;
-  }
-}
-@mixin max-screen_h($break-point) {
-  @media screen and (max-height: $break-point) {
-    @content;
-  }
-}
-
-@mixin min-screen($break-point) {
-  @media screen and (min-width: $break-point) {
-    @content;
-  }
-}
-@mixin min-screen_h($break-point) {
-  @media screen and (min-height: $break-point) {
-    @content;
-  }
-}
-
-@mixin screen($break-point-min, $break-point-max) {
-  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
-    @content;
-  }
-}
 // 第一引数で基準となる画面幅のフォントサイズ、第二引数で基準となる画面幅を入力
 @function get_vw($size, $viewport) {
   $rate: math.div(100, $viewport);
@@ -75,6 +48,10 @@
 @function get_vw_max($size, $min, $viewport) {
   $rate: math.div(100, $viewport);
   @return unquote("max(" + $min * 1px + ", " + $rate * $size * 1vw + ")");
+}
+@function get_vw_min($size, $min, $viewport) {
+  $rate: math.div(100, $viewport);
+  @return unquote("min(" + $min * 1px + ", " + $rate * $size * 1vw + ")");
 }
 
 @mixin fz_vw_sp($font_size: 10, $viewport: $design-base-width-sp) {
@@ -177,6 +154,7 @@
   text-transform: none;
   line-height: 1em;
 }
+
 // 09__疑似要素初期化
 // ----------------------------------------------------------
 @mixin icon-ini {

@@ -1,0 +1,17 @@
+.p-block-primary {
+  &__header {
+    margin-top: get_vw_min(50, 80, 390);
+  }
+  &__summary {
+    margin-top: get_vw(50, 390);
+    @include mq_medium {
+      margin-top: get_vw(100, 1440);
+    }
+  }
+  &__contents {
+    margin-top: get_vw(100, 390);
+    @include mq_medium {
+      margin-top: get_vw(200, 1440);
+    }
+  }
+}

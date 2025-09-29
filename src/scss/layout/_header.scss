@@ -1,2 +1,47 @@
 .l-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: var(--gray-bg);
+  container-type: scroll-state;
+  &__inner {
+    height: var(--height-header);
+    transition: height 0.2s;
+    @container scroll-state(stuck: top) {
+      height: var(--height-header-min);
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: get_vw(24, 390);
+    top: 50%;
+    transform: translateY(-50%);
+    @include mq_medium {
+      left: get_vw(80, 1440);
+    }
+  }
+  &__nav {
+    display: none;
+    @include mq_medium {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: get_vw(24, 390);
+      @include mq_medium {
+        right: get_vw(80, 1440);
+      }
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include mq_medium {
+      display: none;
+    }
+  }
 }

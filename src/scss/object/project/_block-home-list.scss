@@ -1,0 +1,19 @@
+.p-block-home-list {
+  @include mq_medium {
+    display: flex;
+    align-items: center;
+  }
+  &__header {
+    flex-basis: 50%;
+  }
+  &__data {
+    margin-top: var(--margin-large);
+    @include mq_medium {
+      flex-basis: 50%;
+      margin-top: 0;
+    }
+    @include mq_medium {
+      max-width: 400px;
+    }
+  }
+}

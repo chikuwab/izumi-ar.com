@@ -1,0 +1,77 @@
+include ../_components/_config.pug
+
+doctype
+html(lang="ja")
+  head
+    include ../_components/_head_meta.pug
+    meta(property="og:title", content=SITE_NAME)
+    include ../_components/_head_link.pug
+    title #{SITE_NAME}
+  body
+    div(style="display:none")
+      include ../_components/_sprite.pug
+    include ../_components/_header.pug
+    main.l-main
+      .l-main__contents 
+        .p-section-primary
+          section.p-section-primary__item.u-inner
+            .p-block-primary
+              .p-block-primary__header
+                .p-block-primary__title
+                  .p-title-primary.p-title-primary--large
+                    .p-title-primary__item works
+                .p-block-primary__summary 
+                  p.u-text-center-br-none.u-lh-large これまでに設計した住宅と現在進めている計画をご紹介しています。
+                    br
+                    | それぞれ土地の環境、予算も異なる中で会話を重ねて、
+                    br
+                    | お気に入りの一軒を届けるために、愛着を持って設計しています。
+              .p-block-primary__contents
+                .p-block-works-list.p-block-works-list--columns
+                  a.p-block-works-list__item(href="/works/single.html")
+                    .p-block-works-list__pic
+                      img(src="/img/pic/shibayama01.webp", alt="")
+                    .p-block-works-list__data 
+                      .p-block-works-list__title 朝倉の家Ⅰ
+                      .p-block-works-list__sub 30坪のシンプルな平屋
+                  a.p-block-works-list__item(href="/works/single.html")
+                    .p-block-works-list__pic
+                      img(src="/img/pic/shibayama01.webp", alt="")
+                    .p-block-works-list__data 
+                      .p-block-works-list__title 朝倉の家Ⅰ
+                      .p-block-works-list__sub 30坪のシンプルな平屋
+                  a.p-block-works-list__item(href="/works/single.html")
+                    .p-block-works-list__pic
+                      img(src="/img/pic/shibayama01.webp", alt="")
+                    .p-block-works-list__data 
+                      .p-block-works-list__title 朝倉の家Ⅰ
+                      .p-block-works-list__sub 30坪のシンプルな平屋
+                  a.p-block-works-list__item(href="/works/single.html")
+                    .p-block-works-list__pic
+                      img(src="/img/pic/shibayama01.webp", alt="")
+                    .p-block-works-list__data 
+                      .p-block-works-list__title 朝倉の家Ⅰ
+                      .p-block-works-list__sub 30坪のシンプルな平屋
+                  a.p-block-works-list__item(href="/works/single.html")
+                    .p-block-works-list__pic
+                      img(src="/img/pic/shibayama01.webp", alt="")
+                    .p-block-works-list__data 
+                      .p-block-works-list__title 朝倉の家Ⅰ
+                      .p-block-works-list__sub 30坪のシンプルな平屋
+                  a.p-block-works-list__item(href="/works/single.html")
+                    .p-block-works-list__pic
+                      img(src="/img/pic/shibayama01.webp", alt="")
+                    .p-block-works-list__data 
+                      .p-block-works-list__title 朝倉の家Ⅰ
+                      .p-block-works-list__sub 30坪のシンプルな平屋
+              .p-block-primary__contents
+                .p-pagination
+                  .p-pagination__item
+                    nav.c-pagination.pagination.pagination--page1(role="navigation")
+                      span.page-numbers.current(aria-current="page") 1
+                      a.page-numbers(href="#") 2
+                      span.page-numbers.dots …
+                      a.page-numbers(href="#") 6
+                      a.next.page-numbers(href="#") 次へ
+
+    include ../_components/_footer.pug

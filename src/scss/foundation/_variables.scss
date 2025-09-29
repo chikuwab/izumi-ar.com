@@ -1,4 +1,4 @@
-$design-base-width-pc: 1440;
+$design-base-width-pc: 1900;
 $design-base-width-sp: 375;
 
 $breakpoint-small: 375px;
@@ -22,14 +22,15 @@ $width-contents-wide-sp: 0;
   --white: #fff;
   --orange: #;
   --blue: #;
-  --yellow: #ffff00;
+  --yellow: #;
   --navy: #;
-  --red: #9b000d;
+  --red: #;
   --green: #;
-  --pink: #dd077d;
-  --gray: #;
-  --gray-dark: #;
-  --gray-light: #;
+  --pink: #;
+  --gray: #5d5d5d;
+  --gray-dark: ;
+  --gray-light: #adaeae;
+  --gray-bg: #f5f5f5;
 
   --breakpoint-small: #{$breakpoint-small};
   --breakpoint-medium: #{$breakpoint-medium};
@@ -43,42 +44,48 @@ $width-contents-wide-sp: 0;
   --width-contents-wide-sp: #{$width-contents-wide-sp};
 
   --height-header: 70px;
+  --height-header-min: 50px;
 
-  --font-family-en: "Roboto Condensed", sans-serif;
-  --font-family-serif: "", serif;
+  --font-family-en: "Playfair Display", serif;
+  --font-family-serif: "Shippori Mincho", serif;
   --font-family-sans-serif: "", sans-serif;
-  --font-size-xs: 1.2rem;
-  --font-size-small: 1.4rem;
-  --font-size-medium: 1.6rem;
-  --font-size-large: 1.8rem;
-  --font-size-xl: 2rem;
+  --font-size-xs: 1.4rem;
+  --font-size-small: 1.6rem;
+  --font-size-medium: 1.8rem;
+  --font-size-large: 2rem;
+  --font-size-xl: 2.2rem;
 
-  --line-height-small: 1.5;
-  --line-height-medium: 1.7;
-  --line-height-large: 2;
-  --line-height-xl: 2.3;
+  --line-height-small: 1.6;
+  --line-height-medium: 1.9;
+  --line-height-large: 2.1;
+  --line-height-xl: 2.4;
 
   --margin-side: min(20px, 5.3vw);
 
+  --margin-section-xs: min(80px, 21.33vw);
   --margin-section-small: min(100px, 24.15vw);
   --margin-section-medium: min(140px, 33.81vw);
   --margin-section-large: min(180px, 43.47vw);
 
+  --margin-xxxs: min(8px, 2.13vw);
+  --margin-xxs: min(16px, 4.26vw);
   --margin-xs: min(24px, 5.79vw);
   --margin-small: min(32px, 7.72vw);
   --margin-medium: min(40px, 9.66vw);
   --margin-large: min(48px, 11.59vw);
   --margin-xl: min(56px, 13.52vw);
 
-  --border-radius-xs: min(16px, 3.86vw);
-  --border-radius-small: min(24px, 5.79vw);
-  --border-radius-medium: min(32px, 7.72vw);
-  --border-radius-large: min(40px, 7.66vw);
+  // --border-radius-xs: min(16px, 3.86vw);
+  // --border-radius-small: min(24px, 5.79vw);
+  // --border-radius-medium: min(32px, 7.72vw);
+  // --border-radius-large: min(40px, 7.66vw);
+  --border-radius-picture: 4px;
 
   @include mq_medium {
-    --height-header: 100px;
+    --height-header: 160px;
+    --height-header-min: 100px;
 
-    --margin-side: min(50px, 4.16vw);
+    --margin-side: min(80px, 4.21vw);
 
     // --margin-section-small: min(40px, 3.3vw);
     // --margin-section-medium: min(80px, 6.7vw);

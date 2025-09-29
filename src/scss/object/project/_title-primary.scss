@@ -1,2 +1,30 @@
 .p-title-primary {
+  position: relative;
+  padding-top: 28px;
+  text-align: center;
+  font-family: var(--font-family-en);
+  letter-spacing: 0.1em;
+  font-size: get_vw_min(20, 22, 390);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background: var(--gray-light);
+    border-radius: 2px;
+  }
+  &--large {
+    font-size: get_vw_min(30, 32, 390);
+    padding-top: 32px;
+    letter-spacing: 0.2em;
+    &::after {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__item {
+  }
 }

@@ -1,2 +1,22 @@
 .l-footer {
+  margin: 0 var(--margin-side);
+  padding-top: get_vw_min(120, 240, 390);
+  padding-bottom: get_vw_min(40, 40, 390);
+  &__inner {
+    @include mq_medium {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__copy {
+    // font-size: get_vw(18, 1900);
+    font-family: var(--font-family-en);
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-top: var(--margin-small);
+    @include mq_medium {
+      margin-top: 0;
+    }
+  }
 }

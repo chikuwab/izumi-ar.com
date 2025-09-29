@@ -1,4 +1,15 @@
 .u-text {
+  &-center-br-none {
+    @include mq_medium {
+      text-align: center;
+    }
+    @include mq_medium_max {
+      br {
+        display: none;
+      }
+    }
+  }
+
   &-note {
   }
   &-copy {

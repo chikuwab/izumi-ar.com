@@ -1,0 +1,69 @@
+include ../_components/_config.pug
+
+doctype
+html(lang="ja")
+  head
+    include ../_components/_head_meta.pug
+    meta(property="og:title", content=SITE_NAME)
+    include ../_components/_head_link.pug
+    title #{SITE_NAME}
+  body
+    div(style="display:none")
+      include ../_components/_sprite.pug
+    include ../_components/_header.pug
+    main.l-main
+      .l-main__contents 
+        .p-section-primary
+          section.p-section-primary__item.u-inner.u-inner--narrow
+            .p-block-primary
+              .p-block-primary__header
+                .p-block-primary__title
+                  .p-title-primary.p-title-primary--large
+                    .p-title-primary__item news
+                .p-block-primary__summary 
+                  p.u-text-center-br-none.u-lh-large テキストが入ります。テキストが入ります。
+                    br
+                    | テキストが入ります。テキストが入ります。テキストが入ります。
+              .p-block-primary__contents
+                .p-block-list
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入ります
+                  a(href="single.html").p-block-list__item
+                    .p-block-list__date 2025年9月1日
+                    .p-block-list__title タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります
+              .p-block-primary__contents
+                .p-pagination
+                  .p-pagination__item
+                    nav.c-pagination.pagination.pagination--page1(role="navigation")
+                      span.page-numbers.current(aria-current="page") 1
+                      a.page-numbers(href="#") 2
+                      span.page-numbers.dots …
+                      a.page-numbers(href="#") 6
+                      a.next.page-numbers(href="#") 次へ
+
+    include ../_components/_footer.pug

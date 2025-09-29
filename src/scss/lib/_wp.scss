@@ -1,26 +1,28 @@
 section.wp-block-group {
-  margin-top: var(--margin-section-medium);
-  .wp-block-group__inner-container {
-    @include editor();
+  margin-top: get_vw(160, 390);
+  @include mq_medium {
+    margin-top: get_vw(280, 1440);
+  }
+  &:first-child {
+    margin-top: 0;
   }
 }
 
 h2.wp-block-heading {
   text-align: center;
-  @include fz_vw_sp(28);
+  font-size: get_vw_min(24, 30, 390);
 }
 h3.wp-block-heading {
-  @include fz_vw_sp(22);
+  font-size: get_vw_min(22, 26, 390);
 }
 h4.wp-block-heading {
-  @include fz_vw_sp(20);
+  font-size: get_vw_min(20, 22, 390);
 }
 h5.wp-block-heading {
 }
 .wp {
   &-block {
     &-heading {
-      font-weight: bold;
     }
   }
 }
@@ -56,6 +58,10 @@ h5.wp-block-heading {
     }
   }
 }
+.wp-block-buttons,
+.wp-block-columns {
+  margin-top: var(--margin-medium);
+}
 
 .wp-block-column {
   &:not(:first-child) {
@@ -88,7 +94,7 @@ h5.wp-block-heading {
 
 .page-numbers {
   display: inline-block;
-  padding: 16px 14px;
+  padding: 14px 14px 16px 14px;
   margin: 0 1.5%;
   line-height: 1;
   text-decoration: none;
@@ -107,7 +113,7 @@ h5.wp-block-heading {
       transform: translate(-50%, -50%);
       width: 40px;
       height: 40px;
-      border: 1px solid var(--gray);
+      border: 1px solid var(--gray-light);
       z-index: -1;
       border-radius: 2px;
       transition: 0.2s;
@@ -116,16 +122,16 @@ h5.wp-block-heading {
       &:hover {
         color: #fff;
         &::before {
-          border: 1px solid var(--navy);
-          background-color: var(--navy);
+          border: 1px solid var(--gray-light);
+          background-color: var(--gray-light);
         }
       }
     }
     &.current {
       color: #fff;
       &::before {
-        border: 1px solid var(--navy);
-        background-color: var(--navy);
+        border: 1px solid var(--gray-light);
+        background-color: var(--gray-light);
       }
     }
   }

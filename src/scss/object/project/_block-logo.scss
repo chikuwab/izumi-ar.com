@@ -1,0 +1,8 @@
+.p-block-logo {
+  width: get_vw(240, 375);
+  max-width: 300px;
+  @include mq_medium {
+    width: get_vw(364, 1100);
+    max-width: 364px;
+  }
+}

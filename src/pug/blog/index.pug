@@ -1,0 +1,75 @@
+include ../_components/_config.pug
+
+doctype
+html(lang="ja")
+  head
+    include ../_components/_head_meta.pug
+    meta(property="og:title", content=SITE_NAME)
+    include ../_components/_head_link.pug
+    title #{SITE_NAME}
+  body
+    div(style="display:none")
+      include ../_components/_sprite.pug
+    include ../_components/_header.pug
+    main.l-main
+      .l-main__contents 
+        .p-section-primary
+          section.p-section-primary__item.u-inner.u-inner--narrow
+            .p-block-primary
+              .p-block-primary__header
+                .p-block-primary__title
+                  .p-title-primary.p-title-primary--large
+                    .p-title-primary__item blog
+              .p-block-primary__contents
+                article.p-article-primary
+                  .p-article-primary__item
+                    .p-block-cms
+                      .p-block-cms__header
+                        .p-block-cms__eyechatch
+                          img(src="/img/pic/shibayama01.webp", alt="")
+                        .p-block-cms__title タイトルが入りますタイトルが入ります
+                        .p-block-cms__sub 2025年9月25日
+                      .p-block-cms__entry 
+                        section.wp-block-group
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+                article.p-article-primary
+                  .p-article-primary__item
+                    .p-block-cms
+                      .p-block-cms__header
+                        .p-block-cms__eyechatch
+                          img(src="/img/pic/shibayama01.webp", alt="")
+                        .p-block-cms__title タイトルが入りますタイトルが入ります
+                        .p-block-cms__sub 2025年9月25日
+                      .p-block-cms__entry 
+                        section.wp-block-group
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+                article.p-article-primary
+                  .p-article-primary__item
+                    .p-block-cms
+                      .p-block-cms__header
+                        .p-block-cms__title タイトルが入りますタイトルが入ります
+                        .p-block-cms__sub 2025年9月25日
+                      .p-block-cms__entry 
+                        section.wp-block-group
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+
+              .p-block-primary__contents
+                .p-pagination
+                  .p-pagination__item
+                    nav.c-pagination.pagination.pagination--page1(role="navigation")
+                      span.page-numbers.current(aria-current="page") 1
+                      a.page-numbers(href="#") 2
+                      span.page-numbers.dots …
+                      a.page-numbers(href="#") 6
+                      a.next.page-numbers(href="#") 次へ
+
+    include ../_components/_footer.pug

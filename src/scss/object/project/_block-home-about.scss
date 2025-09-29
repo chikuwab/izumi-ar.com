@@ -1,0 +1,17 @@
+.p-block-home-about {
+  &__header {
+    max-width: 190px;
+    margin-inline: auto;
+  }
+  &__contents {
+    margin-top: get_vw_min(48, 56, 390);
+    @include mq_medium_max {
+      br {
+        display: none;
+      }
+    }
+    @include mq_medium {
+      text-align: center;
+    }
+  }
+}

@@ -1,4 +1,7 @@
 .u-font {
+  &-en {
+    font-family: var(--font-family-en);
+  }
   &-15-vw {
     font-size: get_vw(15, 375);
     @include mq_medium {

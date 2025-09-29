@@ -1,6 +1,14 @@
 @mixin editor {
+  section {
+    &:not(:first-child) {
+      margin-top: get_vw_min(100, 180, 390);
+    }
+    > div {
+      margin-top: get_vw_min(48, 56, 390);
+    }
+  }
   > div {
-    margin-top: var(--margin-small);
+    margin-top: get_vw_min(48, 56, 390);
   }
   ul,
   ol,
@@ -8,7 +16,7 @@
   picture,
   p {
     &:not(:first-child) {
-      margin-top: var(--margin-small);
+      margin-top: get_vw_min(48, 56, 390);
     }
   }
   h2,
@@ -16,7 +24,7 @@
   h4,
   h5 {
     &:not(:first-child) {
-      margin-top: var(--margin-medium);
+      margin-top: get_vw_min(56, 64, 390);
     }
   }
 

@@ -1,0 +1,8 @@
+.p-article-primary {
+  & + .p-article-primary {
+    margin-top: get_vw(100, 390);
+    @include mq_medium {
+      margin-top: get_vw(220, 1440);
+    }
+  }
+}

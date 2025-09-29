@@ -1,0 +1,7 @@
+.p-link-instagram {
+  &__item {
+    color: var(--black);
+    font-size: get_vw(20, 375);
+    text-align: center;
+  }
+}

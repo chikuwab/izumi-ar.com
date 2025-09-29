@@ -1,2 +1,16 @@
 .p-nav-global {
+  &__item {
+    @include mq_medium_max {
+      text-align: center;
+      &:not(:first-child) {
+        margin-top: get_vw(20, 390);
+      }
+    }
+    @include mq_medium {
+      display: inline-block;
+      &:not(:first-child) {
+        margin-left: get_vw(20, 1440);
+      }
+    }
+  }
 }
