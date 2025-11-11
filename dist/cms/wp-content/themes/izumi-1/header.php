@@ -1,0 +1,116 @@
+<?php
+global $root_path;
+
+$body_class = "";
+$parent_slug = "";
+$page_info = get_page_info($post);
+$post_type = get_post_type($post);
+
+if (is_home() || is_front_page()) {
+} elseif (is_page()) {
+} elseif (is_single()) {
+} else {
+}
+
+function get_page_title()
+{
+  // ページタイトルを取得
+  $page_title = wp_get_document_title();
+  return $page_title;
+}
+
+$ogimage = (is_single()) ? post_thumbnail_set('large', false) : 'https://www.izumi-ar.com/img/ogimage.webp';
+
+?>
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <?php wp_head(); ?>
+  <?php echo_meta_description_keywords_tag(); ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="<?php og_type() ?>">
+  <meta property="og:title" content="<?php echo get_page_title(); ?> ">
+  <meta property="og:image" content="<?php echo $ogimage ?>">
+  <meta property="og:site_name" content="泉龍斗建築設計">
+  <!-- <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..600;1,400..600&amp;family=Shippori+Mincho:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="/css/main.css?rev=d3209bbcc6f4e780">
+  <link rel="stylesheet" href="/css/fontello/css/fontello.css?rev=d3209bbcc6f4e780">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYSH8FP5TT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYSH8FP5TT');
+  </script>
+</head>
+
+<body>
+  <div style="display: none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol viewBox="0 0 19 209" id="title-01" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#aclip0_93_5704)">
+          <path d="M1.664 160.82H13.28l-11.616-4.914v-2.315l11.568-4.867H1.664v-2.6h15.768v3.567l-12.028 5.121 12.028 5.057v3.631H1.664v-2.68zm0 7.705h15.768v2.711H1.664v-2.711zm10.966 8.989c0 .983-.808 1.808-1.807 1.808-.998 0-1.774-.825-1.774-1.808 0-.982.792-1.807 1.774-1.807.983 0 1.807.809 1.807 1.807zm-7.527.032c0 .983-.793 1.808-1.807 1.808-1.014 0-1.775-.825-1.775-1.808 0-.983.793-1.807 1.775-1.807.983 0 1.807.793 1.807 1.807zm-3.439 6.31h15.768v2.711H1.664v-2.711zm0 22.496H13.28l-11.616-4.914v-2.315l11.568-4.867H1.664v-2.6h15.768v3.567l-12.028 5.121 12.028 5.057v3.631H1.664v-2.68zM11.663 5.77c.047-.269.063-.522.063-.76 0-1.823-1.046-2.648-2.884-2.648h-4.69V0h9.84v2.283h-1.568c1.077.46 1.695 1.554 1.695 2.854 0 .285-.047.523-.063.634h-2.393zM6.957 17.36c-1.712-.523-3.106-2.077-3.106-4.455 0-2.663 1.933-5.042 5.277-5.042 3.106 0 5.182 2.3 5.182 4.788 0 3.028-1.997 4.82-5.119 4.82-.38 0-.713-.048-.745-.064V10.21c-1.49.063-2.567 1.236-2.567 2.695 0 1.459.745 2.14 1.712 2.473l-.634 1.982zm3.185-2.251c1.157-.048 2.187-.809 2.187-2.426 0-1.474-1.125-2.33-2.187-2.41v4.836zM5.943 30.011c-.888 0-1.633.08-1.807.095v-2.251c.222-.047.872-.095 1.268-.095-.824-.46-1.521-1.49-1.521-2.886 0-2.837 2.218-4.724 5.197-4.724 2.98 0 5.15 1.918 5.15 4.693 0 1.712-.792 2.584-1.41 2.885h5.958v2.283H5.943zm.015-4.867c0 1.538 1.268 2.616 3.154 2.616s3.058-1.046 3.058-2.584-1.188-2.664-3.074-2.664-3.138 1.047-3.138 2.648v-.016zm8.034 8.783v2.346H3.153C1.315 36.273 0 35.163 0 33.34c0-.792.143-1.236.19-1.331h1.933a5.306 5.306 0 00-.063.713c0 .888.46 1.205 1.268 1.205h10.664zM19 35.084c0 .856-.681 1.538-1.537 1.538a1.516 1.516 0 01-1.521-1.538c0-.856.681-1.522 1.52-1.522.84 0 1.538.682 1.538 1.522zM3.866 43.82c0-2.347 1.743-3.726 3.914-3.726h6.212v2.346H8.208c-1.22 0-2.25.571-2.25 1.982s.903 2.061 2.203 2.061h5.815v2.347h-8.05c-.808 0-1.442.063-1.806.095v-2.252c.222-.047.681-.079 1.093-.079-.887-.491-1.378-1.633-1.378-2.79l.031.016zm15.118 10.099c0 .856-.681 1.537-1.537 1.537a1.515 1.515 0 01-1.521-1.537c0-.856.665-1.522 1.521-1.522.856 0 1.537.681 1.537 1.522zM4.136 52.76h9.857v2.33H4.152v-2.33h-.016zm4.944 7.976c-1.98 0-3.09 1.268-3.09 2.742 0 1.475 1.078 2.252 1.823 2.474l-.745 2.06c-1.537-.46-3.217-1.934-3.217-4.534 0-2.885 2.25-5.089 5.23-5.089 2.979 0 5.213 2.204 5.213 5.042 0 2.647-1.664 4.106-3.233 4.502l-.76-2.108c.871-.222 1.838-.888 1.838-2.394 0-1.506-1.078-2.711-3.059-2.711v.016zM6.957 79.982c-1.712-.523-3.106-2.077-3.106-4.455 0-2.663 1.933-5.041 5.277-5.041 3.106 0 5.182 2.299 5.182 4.788 0 3.028-1.997 4.82-5.119 4.82-.38 0-.713-.048-.745-.064v-7.198c-1.49.064-2.567 1.237-2.567 2.695 0 1.459.745 2.14 1.712 2.474l-.634 1.981zm3.185-2.251c1.157-.048 2.187-.809 2.187-2.426 0-1.474-1.125-2.33-2.187-2.41v4.836zm3.122 36.178v8.894h-.856v-8.894h.856zm-1.886.301v.92h-6.75v-.92h6.75zm-5.388.428v7.436h-.84v-7.436h.84zm5.546 1.348v4.756H6.72v-4.756h4.817zm-1.933.317v4.122h-.76v-4.122h.76zm-2.092 3.631h3.233v-3.171H7.511v3.171zm5.356-2.03v.904h-1.632v-.904h1.633zm-1.743.032v.824h-4.12v-.824h4.12zm.254 3.646v.92h-6.75v-.92h6.75zm1.172 5.375c.444.412.872.729 1.284.967l-.238.824c-.491-.285-.982-.666-1.521-1.125a8.892 8.892 0 01-1.331-1.491l.665-.539c.317.508.714.967 1.141 1.38v-.016zm-6.402.523a9.97 9.97 0 00.698 1.49c.253.444.49.793.744 1.047l-.538.523a7.561 7.561 0 01-.824-1.094 11.857 11.857 0 01-.809-1.49 12.428 12.428 0 01-.65-1.776l.856-.412c.143.602.333 1.173.54 1.728l-.017-.016zm1.696-1.395v8.815h-.792v-8.815h.792zm4.31.777l.492.333v.555H8.413v-.888h3.756-.016zm.57.459v7.135h-.744v-7.135h.745zm-1.267 0v7.024h-.634v-7.024h.634zm-1.157 0v7.024h-.634v-7.024h.634zm-1.172 0v7.198h-.73v-7.198h.73zm-.57 2.711v.888h-.983v-.888h.982zm-1.411.032l.38.048v.761l-.38.031-2.63.048v-.904l2.63.032v-.016zm6.64.904l-.159.935c-.523-.269-.92-.507-1.188-.729l.047-.983c.38.285.808.539 1.3.777zm-1.332-.682v.872H8.731v-.872h3.724zm-7.051 2.743c.253-.555.523-1.047.808-1.49.285-.444.57-.809.856-1.126l.538.523c-.253.285-.49.65-.744 1.094a11.86 11.86 0 00-.698 1.49 12.666 12.666 0 00-.539 1.712l-.871-.412c.174-.634.396-1.22.65-1.775v-.016z" />
+        </g>
+        <defs>
+          <clipPath id="aclip0_93_5704">
+            <path transform="rotate(90 9.5 9.5)" d="M0 0h209v19H0z" />
+          </clipPath>
+        </defs>
+      </symbol>
+    </svg>
+  </div>
+  <header class="l-header js-header">
+    <div class="l-header__inner">
+      <div class="l-header__logo">
+        <div class="p-block-logo"><a class="p-block-logo__link" href="<?php echo esc_url(home_url('/')) ?>"><img class="p-block-logo__img" src="/img/logo.svg" alt=""></a></div>
+      </div>
+      <div class="l-header__nav">
+        <nav class="p-nav-global">
+          <div class="p-nav-global__box">
+            <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/works/')) ?>">works</a></div>
+            <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/about/')) ?>">about</a></div>
+            <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/notebook/')) ?>">notebook</a></div>
+            <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/news/')) ?>">news</a></div>
+            <div class="p-nav-global__item p-nav-global__item--icon"><a class="icon-instagram u-link-tdn u-font-24" href="https://www.instagram.com/lzuml_ryuto/" target="_blank"> </a></div>
+          </div>
+        </nav>
+      </div>
+      <div class="l-header__btn">
+        <div class="l-header__btn__inner">
+          <div class="c-hamburger js-button-hamburger">
+            <div class="c-hamburger__inner">
+              <div class="c-hamburger__lines"><i class="c-hamburger__line"></i><i class="c-hamburger__line"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="l-nav l-nav--fade">
+    <div class="l-nav__wrap">
+      <div class="l-nav__inner">
+        <div class="l-nav__nav">
+          <nav class="p-nav-global">
+            <div class="p-nav-global__box">
+              <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/works/')) ?>">works</a></div>
+              <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/about/')) ?>">about</a></div>
+              <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/notebook/')) ?>">notebook</a></div>
+              <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/news/')) ?>">news</a></div>
+              <div class="p-nav-global__item"><a class="icon-instagram u-link-tdn u-font-26" href="https://www.instagram.com/lzuml_ryuto/" target="_blank"> </a></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>

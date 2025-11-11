@@ -35,7 +35,7 @@ html(lang="ja")
                     | 建築家・一級建築士
                   picture.u-text-center
                     source(srcset="/img/about-01@2x.webp 2x", type="image/webp")
-                    img.u-img-width-auto(src="/img/about-01.webp", alt="", style="max-width: 257px")
+                    img.u-img-width-auto.u-img-radius(src="/img/about-01.webp", alt="", style="max-width: 257px")
                   p.u-text-pc-center 1988
                     br
                     | 長崎県南島原市生まれ
@@ -50,22 +50,21 @@ html(lang="ja")
                     br
                     | 2014
                     br
-                    | 株式会社 INTERMEDIA 入社｜長崎県島原市
-                    br
-                    | （主に保育園やゲストハウスなど公共施設を担当）
+                    | 株式会社 INTERMEDIA 入社
                     br
                     | 2018
                     br
-                    | class archi 株式会社 入社｜佐賀県鳥栖市
-                    br
-                    | （主に個人住宅を担当）
+                    | class archi 株式会社 入社
                     br
                     | 2024
                     br
-                    | 泉竜斗建築設計　設立｜佐賀県鳥栖市
+                    | 泉竜斗建築設計　設立
                 section
                   h2.p-title-secondary
                     .p-title-secondary__item access
+                  .c-iframe
+                    iframe.c-iframe__item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.8781993461985!2d130.5057794762635!3d33.374245773419766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a39beaf37b09%3A0x6a1d30fe26ec4b13!2z5rOJ56uc5paX5bu656-J6Kit6KiI!5e0!3m2!1sja!2sjp!4v1762507039978!5m2!1sja!2sjp", width="600", height="450", style="border:0;", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+
                   p.u-text-center 〒841-0051
                     br
                     | 佐賀県鳥栖市元町1336-3
@@ -75,11 +74,44 @@ html(lang="ja")
                     | 駐車場：有
                     br
                     | メール：
-                    a(href="mailto:info@izumi-ar.com") info@izumi-ar.com
-                  p.u-text-center
-                    a.icon-instagram.u-link-tdn.u-font-22(href="https://www.instagram.com/lzuml_ryuto/" target="_blank") 
-                  .c-iframe
-                    iframe.c-iframe__item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.862341002974!2d130.50591071195308!3d33.37465975309238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a308db0c5603%3A0x8cf07e52767e7495!2z44CSODQxLTAwNTEg5L2Q6LOA55yM6bOl5qCW5biC5YWD55S677yR77yT77yT77yW4oiS77yTIOWkp-WxseOCouODkeODvOODiA!5e0!3m2!1sja!2sjp!4v1758772774541!5m2!1sja!2sjp", width="600", height="450", style="border:0;", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
-              .p-block-primary__contents
+                    a(href="mailto:izumi@izumi-ar.com") izumi@izumi-ar.com
+                  div.u-mg-t-xs.u-text-center
+                    a.icon-instagram.u-link-tdn.u-font-24(href="https://www.instagram.com/lzuml_ryuto/" target="_blank") 
+
+                  section 
+                  h2.p-title-secondary
+                    .p-title-secondary__item studio
+
+                  p.u-text-pc-center アパートの一室を改装した事務所です。
+                    br
+                    | 明るく落ち着いた空間で、円卓を囲みながら、
+                    br.is-pc
+                    | ゆっくりとご相談いただけます。
+
+                  picture.u-mg-t-xxl
+                    source(srcset="/img/about-02@2x.webp 2x", type="image/webp")
+                    img.u-img-width-auto(src="/img/about-02.webp", alt="")
+
+                  .wp-block-columns.is-layout-flex
+                    .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow
+                      picture
+                        source(srcset="/img/about-03@2x.webp 2x", type="image/webp")
+                        img.u-img-width-auto(src="/img/about-03.webp", alt="")
+                    .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow
+                      picture
+                        source(srcset="/img/about-04@2x.webp 2x", type="image/webp")
+                        img.u-img-width-auto(src="/img/about-04.webp", alt="")
+                  p.u-text-pc-center.u-mg-t-section-small お子様連れのお客さまにも、
+                    br.is-pc
+                    | ごゆっくりお話しができるための
+                    br.is-pc
+                    | キッズスペースを用意しております。
+
+                  p.u-text-pc-center.u-mg-t-section-small
+                    | ご相談のご予約は、
+                    a(href="mailto:izumi@izumi-ar.com") Eメール
+                    |  ・ 
+                    a.icon-instagram.u-link-tdn(href="https://www.instagram.com/lzuml_ryuto/", target="_blank") Instagram
+                    | からお願いします。
 
     include ../_components/_footer.pug

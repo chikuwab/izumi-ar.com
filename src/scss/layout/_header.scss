@@ -45,3 +45,14 @@
     }
   }
 }
+@supports not (container-type: scroll-state) {
+  .l-header {
+    &.is-scrolled {
+      .l-header {
+        &__inner {
+          height: var(--height-header-min);
+        }
+      }
+    }
+  }
+}

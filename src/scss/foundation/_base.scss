@@ -85,12 +85,10 @@ input[type="email"] {
 svg,
 img {
   max-width: 100%;
-  // width: 100%;
 }
 img {
-  @include mq_medium_max {
-    width: 100%;
-  }
+  width: 100%;
+  height: auto;
 }
 i {
   font-style: normal;

@@ -9,7 +9,6 @@ section.wp-block-group {
 }
 
 h2.wp-block-heading {
-  text-align: center;
   font-size: get_vw_min(24, 30, 390);
 }
 h3.wp-block-heading {
@@ -44,18 +43,10 @@ h5.wp-block-heading {
 }
 
 .is-layout-flex {
+  display: flex;
+  gap: 20px;
   @include mq_medium {
-    display: flex;
-  }
-  .wp-block-button {
-    &:not(:first-child) {
-      @include mq_medium_max {
-        margin-top: 10px;
-      }
-      @include mq_medium {
-        margin-left: 20px;
-      }
-    }
+    gap: 40px;
   }
 }
 .wp-block-buttons,
@@ -64,14 +55,8 @@ h5.wp-block-heading {
 }
 
 .wp-block-column {
-  &:not(:first-child) {
-    @include mq_medium_max {
-      margin-top: 20px;
-    }
-    @include mq_medium {
-      margin-left: 40px;
-    }
-  }
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .is-vertically-aligned-center {

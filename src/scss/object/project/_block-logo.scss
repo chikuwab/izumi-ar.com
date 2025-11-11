@@ -4,5 +4,15 @@
   @include mq_medium {
     width: get_vw(364, 1100);
     max-width: 364px;
+    transition: 0.2s;
+  }
+}
+
+.is-scrolled {
+  .p-block-logo {
+    @include mq_medium {
+      width: get_vw(220, 1100);
+      max-width: 280px;
+    }
   }
 }

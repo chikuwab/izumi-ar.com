@@ -1,0 +1,8 @@
+.color-block-support-panel,
+.typography-block-support-panel,
+.html-anchor-control,
+.components-panel__body,
+.components-tools-panel
+{
+  display: none !important;
+}

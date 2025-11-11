@@ -9,10 +9,7 @@
   }
   &-radius {
     overflow: hidden;
-    border-radius: var(--border-radius-small);
-    @include mq_medium {
-      border-radius: var(--border-radius-medium);
-    }
+    border-radius: var(--border-radius-picture);
     &-small {
       overflow: hidden;
       border-radius: var(--border-radius-xs);

@@ -15,6 +15,16 @@
           margin-top: get_vw(140, 1440);
         }
       }
+      &__eyechatch {
+        border-radius: var(--border-radius-picture);
+        overflow: hidden;
+        img {
+          border-radius: 0;
+          aspect-ratio: 16 / 9;
+          object-fit: cover;
+          transition: 0.5s;
+        }
+      }
     }
   }
   &__header {
@@ -41,10 +51,15 @@
     font-size: get_vw_min(15, 16, 390);
   }
   &__summary {
-    margin-top: var(--margin-xs);
+    margin-top: var(--margin-small);
     @include mq_medium {
       margin-top: var(--margin-medium);
       text-align: center;
+    }
+    br {
+      @include mq_medium_max {
+        display: none;
+      }
     }
   }
   &__entry {
@@ -54,5 +69,15 @@
       margin-inline: auto;
     }
     @include editor();
+  }
+  &__post_links {
+    margin-top: get_vw(80, 390);
+    @include mq_medium {
+      margin-top: get_vw(140, 1440);
+      max-width: 1000px;
+      margin-inline: auto;
+    }
+    display: flex;
+    justify-content: space-between;
   }
 }

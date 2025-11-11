@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s;
   &__inner {
   }
   &__lines {
@@ -56,5 +57,10 @@
         transform: rotate(-45deg);
       }
     }
+  }
+}
+.is-scrolled {
+  .c-hamburger {
+    height: var(--height-header-min);
   }
 }

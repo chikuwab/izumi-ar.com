@@ -1,5 +1,10 @@
 .p-nav-global {
   &__item {
+    &--icon {
+      @include mq_medium {
+        vertical-align: -2px;
+      }
+    }
     @include mq_medium_max {
       text-align: center;
       &:not(:first-child) {

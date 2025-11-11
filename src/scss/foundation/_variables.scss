@@ -62,7 +62,7 @@ $width-contents-wide-sp: 0;
 
   --margin-side: min(20px, 5.3vw);
 
-  --margin-section-xs: min(80px, 21.33vw);
+  --margin-section-xs: min(80px, 19.32vw);
   --margin-section-small: min(100px, 24.15vw);
   --margin-section-medium: min(140px, 33.81vw);
   --margin-section-large: min(180px, 43.47vw);
@@ -74,6 +74,7 @@ $width-contents-wide-sp: 0;
   --margin-medium: min(40px, 9.66vw);
   --margin-large: min(48px, 11.59vw);
   --margin-xl: min(56px, 13.52vw);
+  --margin-xxl: min(64px, 15.45vw);
 
   // --border-radius-xs: min(16px, 3.86vw);
   // --border-radius-small: min(24px, 5.79vw);
@@ -83,7 +84,7 @@ $width-contents-wide-sp: 0;
 
   @include mq_medium {
     --height-header: 160px;
-    --height-header-min: 100px;
+    --height-header-min: 60px;
 
     --margin-side: min(80px, 4.21vw);
 

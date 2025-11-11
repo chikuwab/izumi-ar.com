@@ -9,9 +9,9 @@
     }
   }
   &__contents {
-    margin-top: get_vw(100, 390);
+    margin-top: get_vw(80, 390);
     @include mq_medium {
-      margin-top: get_vw(200, 1440);
+      margin-top: get_vw_max(180, 160, 1920);
     }
   }
 }
