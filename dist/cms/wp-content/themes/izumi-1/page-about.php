@@ -33,7 +33,7 @@ get_header();
               </h2>
               <div class="c-iframe"><iframe class="c-iframe__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.8781993461985!2d130.5057794762635!3d33.374245773419766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a39beaf37b09%3A0x6a1d30fe26ec4b13!2z5rOJ56uc5paX5bu656-J6Kit6KiI!5e0!3m2!1sja!2sjp!4v1762507039978!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
               <p class="u-text-center">〒841-0051<br>佐賀県鳥栖市元町1336-3<br>大山アパート203<br>駐車場：有<br>メール：<a href="mailto:izumi@izumi-ar.com">izumi@izumi-ar.com</a></p>
-              <div class="u-mg-t-xs u-text-center"><a class="icon-instagram u-link-tdn u-font-24" href="https://www.instagram.com/lzuml_ryuto/" target="_blank"> </a></div>
+              <div class="u-mg-t-xs u-text-center"><a class="icon-instagram u-link-tdn u-font-24" href="https://www.instagram.com/izumiryuto_ar/" target="_blank"> </a></div>
               <section> </section>
               <h2 class="p-title-secondary">
                 <div class="p-title-secondary__item">studio</div>
@@ -55,7 +55,7 @@ get_header();
                 </div>
               </div>
               <p class="u-text-pc-center u-mg-t-section-small">お子様連れのお客さまにも、<br class="is-pc">ごゆっくりお話しができるための<br class="is-pc">キッズスペースを用意しております。</p>
-              <p class="u-text-pc-center u-mg-t-section-small">ご相談のご予約は、<a href="mailto:izumi@izumi-ar.com">Eメール</a> ・ <a class="icon-instagram u-link-tdn" href="https://www.instagram.com/lzuml_ryuto/" target="_blank">Instagram</a>からお願いします。</p>
+              <p class="u-text-pc-center u-mg-t-section-small">ご相談のご予約は、<a href="mailto:izumi@izumi-ar.com">Eメール</a> ・ <a class="icon-instagram u-link-tdn" href="https://www.instagram.com/izumiryuto_ar/" target="_blank">Instagram</a>からお願いします。</p>
             </section>
           </div>
         </div>

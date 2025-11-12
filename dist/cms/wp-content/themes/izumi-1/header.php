@@ -82,7 +82,7 @@ $ogimage = (is_single()) ? post_thumbnail_set('large', false) : 'https://www.izu
             <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/about/')) ?>">about</a></div>
             <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/notebook/')) ?>">notebook</a></div>
             <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/news/')) ?>">news</a></div>
-            <div class="p-nav-global__item p-nav-global__item--icon"><a class="icon-instagram u-link-tdn u-font-24" href="https://www.instagram.com/lzuml_ryuto/" target="_blank"> </a></div>
+            <div class="p-nav-global__item p-nav-global__item--icon"><a class="icon-instagram u-link-tdn u-font-24" href="https://www.instagram.com/izumiryuto_ar/" target="_blank"> </a></div>
           </div>
         </nav>
       </div>
@@ -107,7 +107,7 @@ $ogimage = (is_single()) ? post_thumbnail_set('large', false) : 'https://www.izu
               <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/about/')) ?>">about</a></div>
               <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/notebook/')) ?>">notebook</a></div>
               <div class="p-nav-global__item"><a class="p-link-gnav" href="<?php echo esc_url(home_url('/news/')) ?>">news</a></div>
-              <div class="p-nav-global__item"><a class="icon-instagram u-link-tdn u-font-26" href="https://www.instagram.com/lzuml_ryuto/" target="_blank"> </a></div>
+              <div class="p-nav-global__item"><a class="icon-instagram u-link-tdn u-font-26" href="https://www.instagram.com/izumiryuto_ar/" target="_blank"> </a></div>
             </div>
           </nav>
         </div>
